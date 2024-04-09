@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { AntDesignOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
 import {
     AppstoreOutlined,
     ContainerOutlined,
@@ -19,20 +21,19 @@ function getItem(label, key, icon, children, type) {
     };
 }
 const items = [
-    getItem('Option 1', '1', <PieChartOutlined />),
-    getItem('Option 2', '2', <DesktopOutlined />),
+    getItem('IMT K-88-21', '1', <PieChartOutlined />,[
+        getItem('TJCHAB k-99-22'),
+        getItem('Mexatronika k-77-22')
+    ]),
+    getItem('Dars jadvali', '2', <DesktopOutlined />),
     getItem('Option 3', '3', <ContainerOutlined />),
     getItem('Navigation One', 'sub1', <MailOutlined />, [
         getItem('Option 5', '5'),
-        getItem('Option 6', '6'),
-        getItem('Option 7', '7'),
-        getItem('Option 8', '8'),
     ]),
     getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
         getItem('Option 9', '9'),
-        getItem('Option 10', '10'),
-        getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
     ]),
+
 ];
 const LeftMenu = () => {
 
@@ -41,16 +42,21 @@ const LeftMenu = () => {
         setCollapsed(!collapsed);
     };
     return (
-        <div className='h-[100vh]' style={{height:100}} >
+        <div>
             <Button
                 type="primary"
                 onClick={toggleCollapsed}
                 style={{
-                    marginBottom: 16,
+                    marginBottom: 0,
+                    position: 'absolute',
+                    zIndex: 2,
+
                 }}
             >
                 {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             </Button>
+
+
             <Menu
                 defaultSelectedKeys={['1']}
                 defaultOpenKeys={['sub1']}
@@ -58,7 +64,15 @@ const LeftMenu = () => {
                 theme="dark"
                 inlineCollapsed={collapsed}
                 items={items}
-            />
+                style={{
+                    fontSize:20,
+                    paddingTop: `${30}px`,
+                    position: 'relative',
+                    height: `${100}vh`
+                }}
+            >
+
+            </Menu>
         </div>
     );
 };

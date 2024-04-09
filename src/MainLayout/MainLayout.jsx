@@ -7,12 +7,12 @@ const MainLayout = () => {
         <div className='flex justify-start'>
             <LeftMenu />
 
-            <div className="right w-[100vw] h-[100vh] pl-5">
+            <div className="right w-[100vw] h-[100vh] overflow-hidden pl-5">
 
                 <div className="navbar bg-base-100">
                     <NavLink to="/" className="btn btn-white text-[#535353] hover:text-[#0867C7] bg:[#0867C71A] text-xl w-[100px]">Fanlar</NavLink>
                 </div>
-                <div className="subjects mt-14">
+                <div className="subjects mt-4 ">
                     <Outlet/>
                 </div>
 

@@ -1,0 +1,11 @@
+{
+    "subjects":[
+        {"id":1,"name":"Kasbiy psixologiya"},
+        {"id":2,"name":"Intellektual agentlar tizimi"},
+        {"id":3,"name":"Avtomatik boshqarish nazariyasi"},
+        {"id":4,"name":"Ekologiya"},
+        {"id":5,"name":"Texnologik jarayonlarni avtomatlashtirish"},
+        {"id":6,"name":"Muhandislik tizimlarini texnik vositalari"},
+        {"id":7,"name":"Indentifikasiyalash, modellashtirish va optimallashtirish"}
+    ]
+}

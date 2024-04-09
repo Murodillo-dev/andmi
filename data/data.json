@@ -1,0 +1,39 @@
+{
+    "matekatika": [
+        {
+            "id": 1,
+            "familiya": "Yusupjonov",
+            "ism": "Murodillo",
+            "kredit": 6,
+            "nb": 8
+        },
+        {
+            "id": 2,
+            "familiya": "Ergashev",
+            "ism": "Tojirbek",
+            "kredit": 6,
+            "nb": 2
+        },
+        {
+            "id": 3,
+            "familiya": "Inamov",
+            "ism": "Abbos",
+            "kredit": 6,
+            "nb": 7
+        },
+        {
+            "id": 4,
+            "familiya": "Sayidov",
+            "ism": "Tohirxon",
+            "kredit": 6,
+            "nb": 8
+        },
+        {
+            "id": 5,
+            "familiya": "xusanboyev",
+            "ism": "Tohirjon",
+            "kredit": 6,
+            "nb": 3
+        }
+    ]
+}
